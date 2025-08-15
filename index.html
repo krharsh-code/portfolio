@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh Kumar Jha - Web Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+ <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Harsh.dev</a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <a href="#" class="download-cv" onclick="downloadCV()">Download CV</a>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-image">
+                <img src="assets/1.png" alt="Harsh Kumar Jha - Profile Picture" class="profile-img">
+            </div>
+            <div class="hero-content">
+                <h1>Hello, I'm Harsh Kumar Jha</h1>
+                <h2>And I'm a Web Developer</h2>
+                <p>I'm a Computer Science student at Chitkara University, passionate about web development and AI. I love building creative and functional projects while continuously learning new technologies.</p>
+                
+                <div class="social-icons">
+                    <a href="#" class="social-icon" onclick="openSocial('linkedin')">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-icon" onclick="openSocial('github')">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                
+                <div class="hero-buttons">
+                    <a href="#" class="btn btn-primary" onclick="hireMeAction()">Hire Me</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="stats-container">
+            <div class="stat-item">
+                <div class="stat-number">2+</div>
+                <div class="stat-label">Years Learning</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">10+</div>
+                <div class="stat-label">Projects Built</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">8+</div>
+                <div class="stat-label">Technologies Learned</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">100+</div>
+                <div class="stat-label">Hours of Coding</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div>
+                <p class="about-text">
+                    I'm a passionate Computer Science student at Chitkara University with a strong interest in web development and artificial intelligence. My journey started with curiosity about how websites work, and it has grown into a love for creating innovative digital solutions.
+                </p>
+                <p class="about-text">
+                    I believe in writing clean, efficient code and creating user experiences that are both beautiful and functional. When I'm not studying or coding, you'll find me exploring new technologies, working on personal projects, or learning about the latest trends in AI and web development.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Let's Talk</a>
+                    <a href="#portfolio" class="btn btn-secondary">View My Work</a>
+                </div>
+            </div>
+            <div class="about-skills">
+                <div class="skill-item">
+                    <i class="fas fa-code" style="color: #00d4ff; margin-bottom: 0.5rem;"></i>
+                    <h4>Clean Code</h4>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-mobile-alt" style="color: #00d4ff; margin-bottom: 0.5rem;"></i>
+                    <h4>Responsive Design</h4>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-rocket" style="color: #00d4ff; margin-bottom: 0.5rem;"></i>
+                    <h4>Performance</h4>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-users" style="color: #00d4ff; margin-bottom: 0.5rem;"></i>
+                    <h4>Team Player</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Frontend Development</h3>
+                <div class="skill-bar">
+                    <div class="skill-name">
+                        <span>HTML & CSS</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-fill" data-width="85"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-name">
+                        <span>JavaScript</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-fill" data-width="75"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-name">
+                        <span>React.js</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-fill" data-width="70"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Backend & Programming</h3>
+                <div class="skill-bar">
+                    <div class="skill-name">
+                        <span>Node.js</span>
+                        <span>65%</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-fill" data-width="65"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-name">
+                        <span>Python</span>
+                        <span>60%</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-fill" data-width="60"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-name">
+                        <span>Java</span>
+                        <span>55%</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-fill" data-width="55"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Tools & Others</h3>
+                <div class="skill-bar">
+                    <div class="skill-name">
+                        <span>Git & GitHub</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-fill" data-width="80"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-name">
+                        <span>C/C++</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-fill" data-width="70"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-name">
+                        <span>SQL</span>
+                        <span>60%</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-fill" data-width="60"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section" id="services">
+        <h2 class="section-title">My Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h3>Frontend Development</h3>
+                <p>Creating responsive and interactive websites using HTML, CSS, JavaScript, and React.js. Focus on clean code and user-friendly interfaces.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3>Responsive Design</h3>
+                <p>Building websites that work perfectly on all devices - desktop, tablet, and mobile. Modern layouts with attention to detail.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3>Web Applications</h3>
+                <p>Developing interactive web applications using modern JavaScript frameworks and libraries. Learning and implementing best practices.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-server"></i>
+                </div>
+                <h3>Backend Development</h3>
+                <p>Learning server-side development with Node.js and Python. Building APIs and working with databases for full-stack projects.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h3>Student Projects</h3>
+                <p>Academic and personal projects showcasing learning progress. Always eager to take on new challenges and learn new technologies.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h3>AI & Learning</h3>
+                <p>Exploring artificial intelligence and machine learning concepts. Combining web development skills with AI to create innovative solutions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="section" id="portfolio">
+        <h2 class="section-title">My Portfolio</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <div class="portfolio-image">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <div class="portfolio-content">
+                    <h3>Personal Portfolio Website</h3>
+                    <p>A responsive portfolio website showcasing my skills and projects. Built with modern web technologies and clean design.</p>
+                    <div class="portfolio-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Responsive</span>
+                    </div>
+                    <div class="portfolio-links">
+                        <a href="#" class="portfolio-link" onclick="viewProject('portfolio')">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a href="#" class="portfolio-link" onclick="viewCode('portfolio')">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="portfolio-image">
+                    <i class="fas fa-calculator"></i>
+                </div>
+                <div class="portfolio-content">
+                    <h3>Interactive Calculator</h3>
+                    <p>A fully functional calculator web application with modern UI design and smooth animations. Built using vanilla JavaScript.</p>
+                    <div class="portfolio-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">DOM</span>
+                    </div>
+                    <div class="portfolio-links">
+                        <a href="#" class="portfolio-link" onclick="viewProject('calculator')">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a href="#" class="portfolio-link" onclick="viewCode('calculator')">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="portfolio-image">
+                    <i class="fas fa-gamepad"></i>
+                </div>
+                <div class="portfolio-content">
+                    <h3>Web-based Game</h3>
+                    <p>An interactive browser game built with JavaScript. Features include score tracking, responsive controls, and engaging gameplay.</p>
+                    <div class="portfolio-tech">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Canvas</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">HTML5</span>
+                    </div>
+                    <div class="portfolio-links">
+                        <a href="#" class="portfolio-link" onclick="viewProject('game')">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a href="#" class="portfolio-link" onclick="viewCode('game')">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div>
+                        <h4>Email</h4>
+                        <p>kumarjhapradeep352@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div>
+                        <h4>Phone</h4>
+                        <p>+91 6283460455</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div>
+                        <h4>Location</h4>
+                        <p>Zirakpur, Punjab</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div>
+                        <h4>University</h4>
+                        <p>Chitkara University</p>
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form" onsubmit="submitForm(event)">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Harsh Kumar Jha. All rights reserved. Built with passion and modern web technologies.</p>
+    </footer>
+
+<script src="script.js"></script>
+
+    <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96f7bb44913e91ac',t:'MTc1NTI1MDgzNy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
